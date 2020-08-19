@@ -13,7 +13,6 @@ VMs
 .xsession-errors.old
 .esmtp_queue
 .vscode
-.wine
 .thunderbird
 .Templates
 .clamtk
