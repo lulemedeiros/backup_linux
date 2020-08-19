@@ -8,7 +8,7 @@ while :; do
   o_origem=/home/$o_user/
   d_destin=/mnt/1TERA/$o_user/ # Antes eu setei no meu linux que eu quero que o HD Externo seja mapeado no cerregamento do sistema com o nome de 1TERA
 
-  # O que não copiar setado no arquivo txt, pode ser nome do arquivo ou de uma pasta, então, se colocar no arquivo para não copiar o arquivo
+  # O que não quero copiar seto no arquivo txt, pode ser nome do arquivo ou de uma pasta, então, se colocar no arquivo para não copiar o arquivo.
   # .tmp ele não ira copiar nem aquivo nem pasta com esse nome, um nome por linha no txt, também pode ser um caminho ex. /home/lixo
   nao_copiar=/mnt/1TERA/nao_copiar.txt
 
@@ -23,14 +23,12 @@ while :; do
   fi
 
   # Usa um arquivo de lock para impedir execução simultânea.
-  # Caso a execução leve mais do que sessenta segundos.
 
   if [[ ! -e /tmp/lockfile ]]; then
     touch /tmp/lockfile
     {
 
       # Começo do código a ser loopado.
-      # Seta e desmonta a data.
 
       ini_da_syc=" Iniciando a sincronizacao do backup! "
       fim_da_syc=" Sincronização de backup concluída! "
@@ -49,7 +47,7 @@ while :; do
       # Fim do código a ser loopado.
 
       rm /tmp/lockfile
-    } &# Note o "&" para execução em background.
+    } & # Note o "&" para execução em background.
   fi
 
   clear
