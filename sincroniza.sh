@@ -16,7 +16,6 @@ while : ; do
     conf_xcowsay="--time=4 --cow-size=small --reading-speed=2"
 
     # Entra em um loop de verificação e avisa se a pasta de destino do backup não for encontrada e sai do script encerrando.
-
         if [ ! -d $d_destin ]; then
             xcowsay $conf_xcowsay " O diretório de destino do backup não foi encontrado! "
         exit 1
