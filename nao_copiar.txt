@@ -28,4 +28,3 @@ VMs
 .ssh
 .bash_profile
 .wget-hsts
-www.wgmaudiovisual.com.br
