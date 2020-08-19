@@ -6,7 +6,7 @@ while :; do
   # Usuário, origem e destino da cópia
   o_user=$(whoami)
   o_origem=/home/$o_user/
-  d_destin=/mnt/1TERA/$o_user/ # Aqui eu setei no meu linux que eu quero que o HD Externo seja mapeado no cerregamento do sistema com o nome de 1TERA
+  d_destin=/mnt/1TERA/$o_user/ # Antes eu setei no meu linux que eu quero que o HD Externo seja mapeado no cerregamento do sistema com o nome de 1TERA
 
   # O que não copiar setado no arquivo txt, pode ser nome do arquivo ou de uma pasta, então, se colocar no arquivo para não copiar o arquivo
   # .tmp ele não ira copiar nem aquivo nem pasta com esse nome, um nome por linha no txt, também pode ser um caminho ex. /home/lixo
