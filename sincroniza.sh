@@ -2,7 +2,7 @@
 
 while : ; do
 
-    # Setando variaveis ...
+    # Setando variaveis...
     # Usuário, origem e destino da cópia
     o_user=$(whoami)
     o_origem=/home/$o_user/
